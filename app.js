@@ -13,7 +13,19 @@ const seedPosts = [
  {id:"p5",title:"مقاومت چیست و کد رنگی آن را چطور بخوانیم؟",category:"الکترونیک",date:"۱۴۰۵/۰۷/۰۹",read:"۶ دقیقه",excerpt:"مفهوم مقاومت، قانون اهم و روش خواندن نوارهای رنگی مقاومت‌های رایج.",body:"مقاومت قطعه‌ای است که جریان را محدود می‌کند. رابطهٔ قانون اهم V = I × R است؛ ولتاژ برابر جریان ضرب‌در مقاومت است.\\n\\nدر مقاومت چهارنواره، دو نوار اول رقم‌های معنادار، نوار سوم ضریب و نوار چهارم تلرانس را نشان می‌دهد. برای خواندن دقیق، از جدول استاندارد رنگ‌ها استفاده کن و جهت نوار تلرانس را تشخیص بده.",image:"",featured:"Ω"},
  {id:"p6",title:"PWM چیست و چرا برای کنترل موتور استفاده می‌شود؟",category:"آردوینو",date:"۱۴۰۵/۰۷/۰۶",read:"۷ دقیقه",excerpt:"با مفهوم مدولاسیون پهنای پالس آشنا شو و تفاوت آن با کم‌کردن مستقیم ولتاژ را بفهم.",body:"PWM مخفف Pulse Width Modulation است. در این روش، سیگنال بین حالت روشن و خاموش تغییر می‌کند و نسبت زمان روشن بودن به کل دوره، Duty Cycle نام دارد.\\n\\nبا تغییر Duty Cycle می‌توان توان متوسط تحویلی به برخی بارها را کنترل کرد. برای موتور، معمولاً از درایور مناسب استفاده می‌شود؛ پایهٔ آردوینو را مستقیماً به موتور وصل نکن.",image:"",featured:"PWM"},
  {id:"p7",title:"متغیر و شرط در برنامه‌نویسی",category:"برنامه‌نویسی",date:"۱۴۰۵/۰۷/۰۳",read:"۵ دقیقه",excerpt:"متغیر برای نگهداری داده است و دستور شرطی به برنامه اجازه می‌دهد بر اساس وضعیت تصمیم بگیرد.",body:"متغیر نامی برای یک مقدار در برنامه است. در زبان C می‌توان نوشت:\\nint temperature = 24;\\nif (temperature > 30) {\\n  // انجام یک کار\\n}\\n\\nشرط داخل if بررسی می‌شود و اگر درست باشد، بدنه اجرا می‌شود. برای یادگیری بهتر، نمونه‌های کوچک را تغییر بده و نتیجه را مشاهده کن.",image:"",featured:"if()"},
- {id:"p8",title:"بردبورد چگونه کار می‌کند؟",category:"الکترونیک",date:"۱۴۰۵/۰۶/۳۰",read:"۴ دقیقه",excerpt:"اتصالات داخلی بردبورد را بشناس تا مدارهای آزمایشی را بدون لحیم‌کاری ببندی.",body:"بردبورد برای ساخت نمونهٔ اولیه استفاده می‌شود. در بسیاری از بردبوردهای رایج، سوراخ‌های هر ردیف میانی در گروه‌های پنج‌تایی به هم متصل‌اند و شیار مرکزی دو سمت را جدا می‌کند. ریل‌های کناری ممکن است در طول برد قطع شده باشند؛ قبل از تغذیه، اتصال‌ها را با نقشه یا مولتی‌متر بررسی کن.",image:"",featured:"PCB"}
+ {id:"p8",title:"بردبورد چگونه کار می‌کند؟",category:"الکترونیک",date:"۱۴۰۵/۰۶/۳۰",read:"۴ دقیقه",excerpt:"اتصالات داخلی بردبورد را بشناس تا مدارهای آزمایشی را بدون لحیم‌کاری ببندی.",body:"بردبورد برای ساخت نمونهٔ اولیه استفاده می‌شود. در بسیاری از بردبوردهای رایج، سوراخ‌های هر ردیف میانی در گروه‌های پنج‌تایی به هم متصل‌اند و شیار مرکزی دو سمت را جدا می‌کند. ریل‌های کناری ممکن است در طول برد قطع شده باشند؛ قبل از تغذیه، اتصال‌ها را با نقشه یا مولتی‌متر بررسی کن.",image:"",featured:"PCB"},
+ {
+  id: "p9",
+  title: "آهنگ گوش بدید و لذت ببرید",
+  category: "پروژه",
+  date: "۱۴۰۵/۰۷/۲۴",
+  read: "پخش موسیقی",
+  excerpt: "چند دقیقه آرامش با موسیقی زیبای Gustavo Santaolalla از بازی The Last of Us.",
+  body: "گاهی موسیقی بدون نیاز به کلمات، احساسات زیادی را زنده می‌کند. هدفون خود را آماده کنید و از شنیدن این اثر لذت ببرید.\n\nهنرمند: Gustavo Santaolalla\nاثر: The Last of Us",
+  audio: "Gustavo Santaolalla - The Last of Us - musicgeek.ir (1).flac",
+  image: "",
+  featured: "♫"
+}
 ];
 
 let posts = loadPosts();
@@ -31,7 +43,16 @@ function renderPosts(){const all=visiblePosts(),shown=all.slice(0,visibleCount);
 function renderAdminPosts(){const el=$("#adminPostList");el.innerHTML=posts.map(p=>`<div class="admin-post-row"><div><b>${escapeHTML(p.title)}</b><small>${escapeHTML(p.category)} · ${escapeHTML(p.date||"")}</small></div><button data-edit="${escapeHTML(p.id)}">ویرایش</button><button class="delete" data-delete="${escapeHTML(p.id)}">حذف</button></div>`).join("")||"<p class='form-note'>هنوز مطلبی ثبت نشده است.</p>"}
 function openModal(id){$("#"+id).classList.remove("hidden");document.body.style.overflow="hidden"}
 function closeModal(id){$("#"+id).classList.add("hidden");if(!$$(".modal-backdrop:not(.hidden)").length)document.body.style.overflow=""}
-function openArticle(id){const p=posts.find(x=>x.id===id);if(!p)return;const body=escapeHTML(p.body).replace(/```([\s\S]*?)```/g,(_,c)=>`<pre>${c}</pre>`).replace(/\n/g,"<br>").replace(/`([^`]+)`/g,"<code>$1</code>");$("#articleModalContent").innerHTML=`<div class="section-kicker">${escapeHTML(p.category)} <span>/ FIELD NOTES</span></div><h1>${escapeHTML(p.title)}</h1><div class="article-meta"><span>${escapeHTML(p.date||"")}</span><span>• ${escapeHTML(p.read||"۵ دقیقه")}</span></div>${p.image?`<img src="${escapeHTML(p.image)}" alt="" style="width:100%;max-height:300px;object-fit:cover;border-radius:12px;margin-top:18px">`:""}<p>${body}</p><div style="border-top:1px solid #e4e9f2;padding-top:14px;color:#8490a3;font-size:11px">Mahyar Elektronic · آزمایشگاه مهندسی</div>`;closeModal("adminModal");openModal("articleModal");recordView()}
+function openArticle(id){const p=posts.find(x=>x.id===id);if(!p)return;const body=escapeHTML(p.body).replace(/```([\s\S]*?)```/g,(_,c)=>`<pre>${c}</pre>`).replace(/\n/g,"<br>").replace(/`([^`]+)`/g,"<code>$1</code>");$("#articleModalContent").innerHTML=`<div class="section-kicker">${escapeHTML(p.category)} <span>/ FIELD NOTES</span></div><h1>${escapeHTML(p.title)}</h1><div class="article-meta"><span>${escapeHTML(p.date||"")}</span><span>• ${escapeHTML(p.read||"۵ دقیقه")}</span></div>${p.image?`<img src="${escapeHTML(p.image)}" alt="" style="width:100%;max-height:300px;object-fit:cover;border-radius:12px;margin-top:18px">`:""}<p>${body}</p>
+${p.audio ? `
+  <div class="music-player" dir="rtl">
+    <h3>🎵 آهنگ گوش بدید و لذت ببرید</h3>
+    <audio controls preload="metadata" style="width:100%">
+      <source src="${encodeURI(p.audio)}" type="audio/flac">
+      مرورگر شما از پخش این فایل پشتیبانی نمی‌کند.
+    </audio>
+  </div>
+` : ""}<div style="border-top:1px solid #e4e9f2;padding-top:14px;color:#8490a3;font-size:11px">Mahyar Elektronic · آزمایشگاه مهندسی</div>`;closeModal("adminModal");openModal("articleModal");recordView()}
 function recordView(){const consent=readConsent();if(!consent?.analytics)return;let a={views:0,devices:{},countries:{}};try{a=JSON.parse(localStorage.getItem(analyticsKey))||a}catch{}a.views++;const ua=navigator.userAgent;const d=/Mobi|Android|iPhone/i.test(ua)?"موبایل":/iPad|Tablet/i.test(ua)?"تبلت":"رایانه";a.devices[d]=(a.devices[d]||0)+1;localStorage.setItem(analyticsKey,JSON.stringify(a));if(API_BASE)fetch(`${API_BASE}/api/analytics/view`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({analytics:true,path:location.pathname+location.hash})}).catch(()=>{})}
 function readConsent(){try{return JSON.parse(localStorage.getItem(CONSENT_KEY))}catch{return null}}
 function saveConsent(analytics){localStorage.setItem(CONSENT_KEY,JSON.stringify({essential:true,analytics:!!analytics,updatedAt:new Date().toISOString()}));$("#cookieBanner").classList.add("hidden");closeModal("cookieModal");toast("تنظیمات حریم خصوصی ذخیره شد.");if(API_BASE)fetch(`${API_BASE}/api/consent`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({analytics:!!analytics})}).catch(()=>{})}
