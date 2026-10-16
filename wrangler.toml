@@ -1,0 +1,16 @@
+name = "mahyar-elektronic-api"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mahyar-elektronic-db"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[[r2_buckets]]
+binding = "UPLOADS"
+bucket_name = "mahyar-elektronic-uploads"
+
+[vars]
+SITE_ORIGIN = "https://YOUR-SITE.pages.dev"
+# Set ADMIN_PASSWORD and TOKEN_SECRET with `wrangler secret put`, never commit them here.

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1630">
+  <meta name="description" content="Mahyar Elektronic؛ آزمایشگاه آموزش الکترونیک، آردوینو، برنامه‌نویسی و پروژه‌های مهندسی.">
+  <title>Mahyar Elektronic | آزمایشگاه مهندسی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> آزمایشگاه دیجیتال مهیار <span class="announcement-sep">/</span> یادگیری، ساختن، مهندسی</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="صفحه اصلی Mahyar Elektronic">
+      <span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 42 14v20L24 44 6 34V14Z"/><path d="M15 30V18l9 7 9-7v12M24 25v10"/></svg></span>
+      <span class="brand-text"><b>Mahyar <em>Elektronic</em></b><small>ENGINEERING • ELECTRONICS • CODE</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#latest">مطالب</a><a href="#topics">حوزه‌ها</a><a href="#projects">پروژه‌ها</a><a href="#about">درباره آزمایشگاه</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="جست‌وجو"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="menu-btn" id="menuToggle" aria-label="باز کردن منو">☰</button>
+      <button class="admin-link" id="adminOpen"><span class="tiny-lock">⌑</span> پنل مدیریت</button>
+    </div>
+  </header>
+
+  <section class="search-bar hidden" id="searchBar"><div class="search-inner"><span>⌕</span><input id="searchInput" type="search" placeholder="جست‌وجوی مقاله، قطعه یا پروژه…"><button id="searchClose">بستن</button></div></section>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div><div class="hero-glow"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> دانش مهندسی، بدون مرز</div>
+        <h1>ایده‌ها را به<br><span>مدارهای واقعی</span> تبدیل کن.</h1>
+        <p class="hero-lead">یک آزمایشگاه دیجیتال برای کنجکاوها؛ از مفاهیم پایهٔ الکترونیک و منطق دیجیتال تا آردوینو، برنامه‌نویسی و پروژه‌های کاربردی.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#latest">کاوش مطالب <span>←</span></a><a class="btn btn-ghost" href="#topics">حوزه‌های یادگیری <span>↙</span></a></div>
+        <div class="hero-stats"><div><strong id="statArticles">۰۸</strong><span>یادداشت و آموزش</span></div><i></i><div><strong>۰۴</strong><span>حوزهٔ تخصصی</span></div><i></i><div><strong>∞</strong><span>چیزهایی برای ساختن</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="circuit-orbit orbit-one"></div><div class="circuit-orbit orbit-two"></div>
+        <div class="chip-card"><div class="chip-top"><span>ME / LAB</span><span class="chip-status"><i></i> SYSTEM READY</span></div>
+          <svg class="chip-art" viewBox="0 0 360 300" aria-label="تصویر گرافیکی تراشه و مسیرهای مدار"><defs><linearGradient id="chipg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4e9fff"/><stop offset="1" stop-color="#1a4b9a"/></linearGradient><pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#8dbbff" opacity=".4"/></pattern></defs><rect x="1" y="1" width="358" height="298" rx="18" fill="url(#dots)" opacity=".7"/><g stroke="#2c75c9" stroke-width="2" fill="none" opacity=".85"><path d="M22 70h56v28h28M14 148h64v-22h28M24 226h52v-32h22M250 54h40v34h48M254 118h78v27h18M254 210h47v-28h37M176 16v40M210 244v38M125 248v27"/></g><g fill="#66c7ff"><circle cx="22" cy="70" r="3"/><circle cx="14" cy="148" r="3"/><circle cx="24" cy="226" r="3"/><circle cx="338" cy="54" r="3"/><circle cx="350" cy="145" r="3"/><circle cx="338" cy="182" r="3"/><circle cx="176" cy="16" r="3"/><circle cx="210" cy="282" r="3"/></g><rect x="103" y="64" width="153" height="170" rx="10" fill="#0c1b37" stroke="#7dbaff" stroke-width="2"/><rect x="114" y="75" width="131" height="148" rx="5" fill="url(#chipg)" stroke="#8ac7ff"/><path d="M128 92h30m-30 12h18m-18 12h24M226 187h-24m24-12h-14m14-12h-20" stroke="#b7e5ff" stroke-width="2" stroke-linecap="round"/><text x="179" y="144" fill="#fff" font-size="28" text-anchor="middle" font-weight="800">ME</text><text x="179" y="165" fill="#d6ebff" font-size="9" text-anchor="middle" letter-spacing="2">MICRO LAB</text><g stroke="#8bbfff" stroke-width="4" stroke-linecap="round"><path d="M121 55v9m18-9v9m18-9v9m18-9v9m18-9v9m18-9v9m18-9v9M121 234v10m18-10v10m18-10v10m18-10v10m18-10v10m18-10v10m18-10v10"/></g></svg>
+          <div class="chip-bottom"><span>CORE: CURIOSITY</span><span>V. 01.0</span></div>
+        </div>
+        <div class="float-tag tag-a"><span class="tag-icon">⌘</span><span><b>Logic & Code</b><small>از بیت تا برنامه</small></span></div>
+        <div class="float-tag tag-b"><span class="tag-icon blue">ϟ</span><span><b>Build / Test / Learn</b><small>یادگیری با ساختن</small></span></div>
+      </div>
+      <div class="hero-footer"><span>01 — THE LAB</span><span class="hero-footer-line"></span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="topic-strip" id="topics"><div class="section-kicker">نقشهٔ یادگیری <span> / LEARNING PATH</span></div>
+      <div class="topic-grid">
+        <a class="topic-card" href="#latest" data-filter="الکترونیک"><span class="topic-icon">⌁</span><span><b>الکترونیک پایه</b><small>قطعات، مدار و اندازه‌گیری</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic-card" href="#latest" data-filter="دیجیتال"><span class="topic-icon">▦</span><span><b>منطق دیجیتال</b><small>باینری، گیت‌ها و آی‌سی‌ها</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic-card" href="#latest" data-filter="آردوینو"><span class="topic-icon">⌘</span><span><b>آردوینو و امبدد</b><small>از سنسور تا کنترل‌گر</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic-card" href="#latest" data-filter="برنامه‌نویسی"><span class="topic-icon">‹/›</span><span><b>برنامه‌نویسی</b><small>کد، الگوریتم و ابزارها</small></span><span class="topic-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="content-section" id="latest"><div class="section-heading"><div><div class="section-kicker">از میز کار <span>/ FIELD NOTES</span></div><h2>آخرین مطالب <span class="heading-dot">.</span></h2><p>یادداشت‌هایی برای فهمیدن، آزمایش کردن و ساختن.</p></div><div class="filter-row"><button class="filter-chip active" data-filter="همه">همه</button><button class="filter-chip" data-filter="الکترونیک">الکترونیک</button><button class="filter-chip" data-filter="دیجیتال">دیجیتال</button><button class="filter-chip" data-filter="آردوینو">آردوینو</button><button class="filter-chip" data-filter="برنامه‌نویسی">کدنویسی</button></div></div>
+      <div class="article-grid" id="articleGrid"></div><div class="empty-state hidden" id="emptyState">مطلبی با این عبارت پیدا نشد. عبارت دیگری را امتحان کن.</div>
+      <div class="load-more-wrap"><button class="btn btn-outline" id="loadMore">نمایش مطالب بیشتر <span>↓</span></button></div>
+    </section>
+
+    <section class="feature-band" id="projects"><div class="feature-copy"><div class="section-kicker">میز آزمایش <span>/ PROJECT DESK</span></div><h2>فقط تماشا نکن.<br><span>چیزی بساز.</span></h2><p>پروژه‌های کوچک، آزمایش‌های قابل تکرار و توضیحاتی که کمک می‌کنند بفهمی پشت هر مدار چه می‌گذرد.</p><a href="#latest" class="text-link">رفتن به آموزش‌ها <span>←</span></a></div><div class="project-visual"><div class="terminal-window"><div class="terminal-bar"><span></span><span></span><span></span><small>experiment.ino</small></div><div class="terminal-code"><p><i>// Start with a question</i></p><p><b>const</b> int <em>ledPin</em> = 13;</p><p><b>void</b> <em>setup</em>() {</p><p class="indent">pinMode(ledPin, OUTPUT);</p><p>}</p><p><b>void</b> <em>loop</em>() {</p><p class="indent">digitalWrite(ledPin, HIGH);</p><p class="indent">delay(500);</p><p class="indent">digitalWrite(ledPin, LOW);</p><p class="indent">delay(500);</p><p>}</p><p class="terminal-cursor">▌</p></div></div><div class="project-stamp">TEST<br>LEARN<br>REPEAT<span>✳</span></div></div></section>
+
+    <section class="about-section" id="about"><div class="about-symbol"><span>ME</span><div class="symbol-ring"></div><div class="symbol-ring ring-two"></div></div><div class="about-copy"><div class="section-kicker">دربارهٔ سایت <span>/ ABOUT THE LAB</span></div><h2>کنجکاوی، اولین ابزار مهندسی است.</h2><p><b>Mahyar Elektronic</b> فضایی برای ثبت تجربه‌ها، آموزش مفاهیم فنی و به‌اشتراک‌گذاری پروژه‌هاست؛ از الکترونیک و مدارهای دیجیتال تا میکروکنترلرها و نرم‌افزار.</p><p class="muted">این سایت به‌مرور با محتوای تازه، پروژه‌های آزمایش‌شده و منابع آموزشی کامل‌تر می‌شود.</p><a class="btn btn-dark" href="#latest">شروع یادگیری <span>←</span></a></div></section>
+
+    <section class="newsletter"><div><div class="section-kicker">به‌روز بمان <span>/ STAY IN THE LOOP</span></div><h2>ایدهٔ بعدی از همین‌جا شروع می‌شود.</h2><p>مطالب تازه را دنبال کن؛ بدون شلوغی و حاشیه.</p></div><a class="btn btn-primary" href="#latest">دیدن تازه‌ترین مطالب <span>←</span></a></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark"><svg viewBox="0 0 48 48"><path d="M24 4 42 14v20L24 44 6 34V14Z"/><path d="M15 30V18l9 7 9-7v12M24 25v10"/></svg></span><span class="brand-text"><b>Mahyar <em>Elektronic</em></b><small>ENGINEERING • ELECTRONICS • CODE</small></span></a><p>ساخته‌شده برای ذهن‌هایی که می‌پرسند «چطور کار می‌کند؟»</p><div class="footer-bottom"><span>© <span id="year"></span> Mahyar Elektronic</span><span>DESIGNED FOR THE CURIOUS.</span><button id="cookieSettings">تنظیمات حریم خصوصی</button></div></footer>
+
+  <div class="cookie-banner hidden" id="cookieBanner"><div><b>حریم خصوصی مهم است.</b><p>برای ذخیرهٔ تنظیمات و آمار بازدید، انتخابت را مشخص کن. کوکی‌های ضروری همیشه فعال‌اند.</p><a href="#privacy" id="privacyDetails">جزئیات بیشتر</a></div><div class="cookie-actions"><button class="btn btn-primary" id="acceptAll">پذیرش همه</button><button class="btn btn-outline" id="essentialOnly">فقط ضروری</button><button class="cookie-custom" id="customCookies">تنظیمات</button></div></div>
+
+  <div class="modal-backdrop hidden" id="articleModal"><article class="article-modal"><button class="modal-close" data-close="articleModal">×</button><div id="articleModalContent"></div></article></div>
+  <div class="modal-backdrop hidden" id="adminModal"><section class="admin-modal"><button class="modal-close" data-close="adminModal">×</button><div class="admin-head"><div class="section-kicker">CONTROL ROOM <span>/ مدیریت</span></div><h2>پنل مدیریت <span class="heading-dot">.</span></h2><p>فقط مدیر مجاز به انتشار و مدیریت محتواست.</p></div><div id="adminLoginPanel"><label for="adminPassword">رمز مدیریت</label><input id="adminPassword" type="password" autocomplete="current-password" placeholder="رمز عبور پنل"><button class="btn btn-primary full" id="adminLogin">ورود امن <span>←</span></button><p class="form-note" id="loginMessage">در نسخهٔ نمایشی، رمز نمونه <code>ME-demo-2026</code> است. برای سایت آنلاین، ورود واقعی را در راهنمای استقرار فعال کن.</p></div><div id="adminDashboard" class="hidden"><div class="admin-toolbar"><span class="admin-status"><i></i> مدیر وارد شده</span><button class="btn btn-outline" id="adminLogout">خروج</button></div><div class="admin-tabs"><button class="active" data-tab="editor">محتوا</button><button data-tab="analytics">آمار</button></div><div id="adminEditor"><form id="articleForm"><input type="hidden" id="editId"><label>عنوان مطلب</label><input id="postTitle" required maxlength="140" placeholder="مثلاً آشنایی با گیت‌های منطقی"><label>خلاصه</label><textarea id="postExcerpt" required maxlength="260" rows="2" placeholder="در چند جمله توضیح بده این مطلب چه چیزی یاد می‌دهد."></textarea><div class="form-two"><div><label>دسته‌بندی</label><select id="postCategory"><option>الکترونیک</option><option>دیجیتال</option><option>آردوینو</option><option>برنامه‌نویسی</option><option>پروژه</option></select></div><div><label>زمان مطالعه</label><input id="postRead" value="۵ دقیقه" maxlength="30"></div></div><label>آدرس تصویر کاور (اختیاری)</label><input id="postImage" type="url" placeholder="https://…">
+<label>بارگذاری فایل (تصویر، ویدئو، PDF یا ZIP؛ در سایت آنلاین)</label><div class="upload-row"><input id="postFile" type="file" accept="image/*,video/*,application/pdf,text/plain,application/zip"><button class="btn btn-outline" type="button" id="uploadFile">بارگذاری فایل</button></div><p class="form-note" id="uploadMessage">در نسخهٔ دمو، بارگذاری روی سرور فعال نیست. پس از اتصال API می‌توانی فایل را در فضای ابری ذخیره کنی.</p>
+<label>متن کامل مطلب (پشتیبانی از متن ساده و کد)</label><textarea id="postBody" required rows="7" placeholder="متن آموزش را بنویس…"></textarea><div class="form-two"><button class="btn btn-primary" type="submit" id="savePost">ذخیرهٔ مطلب</button><button class="btn btn-outline" type="button" id="clearPost">مطلب تازه</button></div><p class="form-note" id="editorMessage"></p></form><h3 class="admin-list-title">مطالب منتشرشده</h3><div id="adminPostList" class="admin-post-list"></div></div><div id="adminAnalytics" class="hidden"><div class="analytics-cards"><div><span>بازدیدهای ثبت‌شده</span><b id="analyticsViews">۰</b></div><div><span>کشورهای تقریبی</span><b id="analyticsCountries">—</b></div><div><span>دستگاه‌ها</span><b id="analyticsDevices">—</b></div></div><p class="form-note">آمار این نسخهٔ نمایشی فقط روی همین مرورگر است. در استقرار واقعی، آمار فقط با رضایت کاربر و بدون نگهداری IP خام ثبت می‌شود.</p></div></div></section></div>
+
+  <div class="modal-backdrop hidden" id="cookieModal"><section class="cookie-modal"><button class="modal-close" data-close="cookieModal">×</button><div class="section-kicker">PRIVACY CENTER <span>/ حریم خصوصی</span></div><h2>انتخاب تنظیمات کوکی</h2><p>کوکی‌های ضروری برای عملکرد سایت لازم‌اند و همیشه فعال هستند. آمار اختیاری تنها با رضایت تو فعال می‌شود.</p><div class="consent-row"><div><b>کوکی‌های ضروری</b><small>امنیت و ذخیرهٔ انتخاب حریم خصوصی</small></div><span class="always-on">همیشه فعال</span></div><div class="consent-row"><div><b>آمار بازدید</b><small>کمک می‌کند بفهمیم کدام مطالب مفیدترند.</small></div><label class="switch"><input type="checkbox" id="analyticsConsent"><span></span></label></div><div class="cookie-actions"><button class="btn btn-primary" id="saveCookiePrefs">ذخیرهٔ انتخاب</button><button class="btn btn-outline" id="rejectOptional">رد موارد اختیاری</button></div></section></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
